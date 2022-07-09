@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <title>Frontend Mentor | Interactive rating component</title>
+  <link rel="stylesheet" href="output.css">
+  <script defer src="app.js"></script>
+</head>
+<body class="flex justify-center items-center bg-VeryDarkBlue">
+
+<div class="main container bg-DarkBlue mx-auto max-w-sm rounded-xl">
+  <!-- Main content goes here -->
+  <div class="ratingSection" id="">
+    <div class="flex flex-col p-5">
+      <!-- star logo here -->
+      <div class="pb-5">
+        <div class="flex">
+          <img class="bg-MediumGrey text-Orange p-3 rounded-full hover:bg-amber-300 transition duration-500" src="images/icon-star.svg" alt="icon star">
+        </div>
+      </div>
+      <!-- end -->
+      <!-------------------------------------------->
+      <!-- text & button container -->
+      <div>
+        <!-- how did we do -->
+      <div class="pb-3">
+        <h1 class="text-LightGrey text-3xl font-['Poppins'] font-bold">How did we do?</h1>
+      </div>
+      <!-- end -->
+      <!-- texts -->
+      <div>
+        <p class="text-LightGrey">
+          Please let us know how we did with your support request. All feedback is appreciated 
+          to help us improve our offering!
+        </p>
+      </div>
+      <!-- end -->
+      <!-- rating buttons -->
+      <div class="grid justify-evenly align-middle buttons py-6 ">
+          <div onclick="rate(this, 'btn-one')" id="btn-one" class="btn bg-MediumGrey rounded-full flex items-center justify-center font-['Poppins'] text-gray-300 font-medium hover:cursor-pointer hover:bg-slate-700 transition duration-500"><button value="1">1</button></div>
+          <div onclick="rate(this, 'btn-two')" id="btn-two" class="btn bg-MediumGrey rounded-full flex items-center justify-center font-['Poppins'] text-gray-300 font-medium hover:cursor-pointer hover:bg-slate-700 transition duration-500"><button value="2">2</button></div>
+          <div onclick="rate(this, 'btn-three')" id="btn-three" class="btn bg-MediumGrey rounded-full flex items-center justify-center font-['Poppins'] text-gray-300 font-medium hover:cursor-pointer hover:bg-slate-700 transition duration-500"><button value="3">3</button></div>
+          <div onclick="rate(this, 'btn-four')" id="btn-four" class="btn bg-MediumGrey rounded-full flex items-center justify-center font-['Poppins'] text-gray-300 font-medium hover:cursor-pointer hover:bg-slate-700 transition duration-500"><button value="4">4</button></div>
+          <div onclick="rate(this, 'btn-five')" id="btn-five" class="btn bg-MediumGrey rounded-full flex items-center justify-center font-['Poppins'] text-gray-300 font-medium hover:cursor-pointer hover:bg-slate-700 transition duration-500"><button value="5">5</button></div>
+      </div>
+      <!-- end -->
+      <!-- submit button -->
+      <div>
+        <div>
+          <button onclick="changeText()" class="button w-full py-3 bg-Orange rounded-full text-White font-['Poppins'] hover:bg-amber-800 font-medium transition duration-500" value="submit">Submit</button>
+        </div>
+      </div>
+      <!-- end -->
+      </div>
+      <!-- text & button container end -->
+    </div>
+  </div>
+  <!-- End -->
+</div>
+</div>
+</body>
+</html>
